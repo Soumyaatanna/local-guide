@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Local Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏙️ Hyderabad Local Guide</h1>
+            <p>Your local expert for Telugu slang, street food, and traffic patterns</p>
+            <small>Powered by .kiro/product.md</small>
+        </header>
+
+        <div class="main-content">
+            <div class="query-section">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Ask me anything about Hyderabad..." />
+                    <button id="submit-btn">Ask</button>
+                </div>
+                
+                <div class="example-queries">
+                    <p>Try these local questions:</p>
+                    <div class="query-buttons">
+                        <button class="query-btn" data-query="Best street food near Ameerpet?">Best street food near Ameerpet?</button>
+                        <button class="query-btn" data-query="Madhapur traffic situation now?">Madhapur traffic situation now?</button>
+                        <button class="query-btn" data-query="What does 'babu' mean in Telugu?">What does 'babu' mean in Telugu?</button>
+                        <button class="query-btn" data-query="Where to find good haleem in Old City?">Where to find good haleem in Old City?</button>
+                        <button class="query-btn" data-query="HITEC City to Secunderabad route?">HITEC City to Secunderabad route?</button>
+                        <button class="query-btn" data-query="What is Hyderabadi Hindi?">What is Hyderabadi Hindi?</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="response-section">
+                <div id="response-area" class="response-area">
+                    <div class="welcome-message">
+                        <h3>Welcome to your Hyderabad Local Guide!</h3>
+                        <p>I can help you with:</p>
+                        <ul>
+                            <li><strong>Telugu Slang:</strong> "What does 'enti ra' mean?"</li>
+                            <li><strong>Street Food:</strong> "Best biryani spots in Banjara Hills?"</li>
+                            <li><strong>Traffic Info:</strong> "Rush hour timings for ORR?"</li>
+                            <li><strong>Local Culture:</strong> "Food timings in Hyderabad?"</li>
+                            <li><strong>Neighborhoods:</strong> "Tell me about Kondapur area"</li>
+                        </ul>
+                        <p class="tip">Click any example question above or type your own!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>All responses based on local knowledge from <code>.kiro/product.md</code></p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
